@@ -13,16 +13,25 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@prisma/client": "^3.12.0",
+    "bcrypt": "^5.0.1",
+    "cookie": "^0.4.2",
     "framer-motion": "^6.2.9",
+    "jsonwebtoken": "^8.5.1",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
-    "reset-css": "^5.0.1"
+    "reset-css": "^5.0.1",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
     "eslint": "8.13.0",
-    "eslint-config-next": "12.1.4"
+    "eslint-config-next": "12.1.4",
+    "prisma": "^3.12.0"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }
